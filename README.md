@@ -17,6 +17,7 @@ Step 6: Perform exact inference using the defined evidence and query variables.<
 Step 7: Print the results.<br>
 
 ## Program :
+```
 from pgmpy.models import BayesianNetwork
 
 from pgmpy.factors.discrete import TabularCPD
@@ -48,7 +49,7 @@ query_variable='Burglary'
 result=inference.query(variables=[query_variable],evidence=evidence)
 
 print(result)
-
+```
 
 ## Output :
 
